@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 YaBrowser/25.10.0.0 Safari/537.36" version="29.2.1" pages="2">
+  <diagram name="Диаграмма деятельности" id="0">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Начало" style="ellipse;whiteSpace=wrap;html=1;fillColor=#00FF00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Руководитель создает заявку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFF99;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="HR проверяет заявку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Заявка одобрена?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="270" y="320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Публикация вакансии и прием заявок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFF99;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Уведомление руководителя о доработке" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="270" y="520" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Конец процесса" style="ellipse;whiteSpace=wrap;html=1;fillColor=#00FF00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="620" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Диаграмма последовательности" id="1">
+    <mxGraphModel dx="1426" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Клиент" vertex="1">
+          <mxGeometry height="400" width="120" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Система" vertex="1">
+          <mxGeometry height="400" width="120" x="200" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Платежный шлюз" vertex="1">
+          <mxGeometry height="400" width="120" x="350" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Администратор площадки" vertex="1">
+          <mxGeometry height="400" width="140" x="500" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Подрядчики" vertex="1">
+          <mxGeometry height="400" width="120" x="670" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Менеджер" vertex="1">
+          <mxGeometry height="400" width="120" x="810" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="3" value="Запрос доступности">
+          <mxGeometry relative="1" x="-1" y="134" as="geometry">
+            <mxPoint x="-60" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="2" value="Ответ: доступность">
+          <mxGeometry relative="1" x="-1" y="-134" as="geometry">
+            <mxPoint x="60" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="4" value="Запрос предоплаты">
+          <mxGeometry relative="1" x="-1" y="92" as="geometry">
+            <mxPoint x="-60" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" source="4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="3" value="Статус платежа">
+          <mxGeometry relative="1" x="-1" y="-85" as="geometry">
+            <mxPoint x="60" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" source="3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="5" value="Уведомление">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="130" />
+              <mxPoint x="400" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="6" value="Задачи подрядчикам">
+          <mxGeometry relative="1" x="-1" y="128" as="geometry">
+            <mxPoint x="-80" y="28" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="5" value="Отчет о выполнении">
+          <mxGeometry relative="1" x="1" y="-161" as="geometry">
+            <mxPoint x="-80" y="21" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" target="7" value="Отчет менеджеру">
+          <mxGeometry relative="1" x="0.0588" y="110" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
