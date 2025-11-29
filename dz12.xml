@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Диаграмма деятельности">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <mxCell id="2" value="Начало" style="ellipse;whiteSpace=wrap;html=1;fillColor=#00FF00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="80" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="3" value="Руководитель создает заявку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFF99;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="4" value="HR проверяет заявку" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;" vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="5" value="Заявка одобрена?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="270" y="320" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="6" value="Публикация вакансии и прием заявок" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFF99;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="7" value="Уведомление руководителя о доработке" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="270" y="520" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="8" value="Конец процесса" style="ellipse;whiteSpace=wrap;html=1;fillColor=#00FF00;" vertex="1" parent="1">
+          <mxGeometry x="300" y="620" width="120" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="6" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=classic;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram name="Диаграмма последовательности">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="2" value="Клиент" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="120" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Система" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="120" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Платежный шлюз" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="50" width="120" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Администратор площадки" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="50" width="140" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="Подрядчики" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="50" width="120" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Менеджер" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="50" width="120" height="400" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Запрос доступности" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="Ответ: доступность" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="3" target="2">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Запрос предоплаты" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Статус платежа" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="Уведомление" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="Задачи подрядчикам" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="Отчет о выполнении" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="Отчет менеджеру" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=open;" edge="1" parent="1" source="5" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
